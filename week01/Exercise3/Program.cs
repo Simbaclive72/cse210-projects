@@ -8,9 +8,12 @@ class Program
 
         while (playAgain == "yes")
         {
-            // Generate random magic number between 1 and 100
-            Random randomGenerator = new Random();
-            int magicNumber = randomGenerator.Next(1, 101);
+            // User sets the magic number
+            Console.Write("Enter the magic number (1-100): ");
+            int magicNumber = int.Parse(Console.ReadLine());
+
+            // Optional: Clear console so the guesser doesn't see it
+            Console.Clear();
 
             int guess = 0;
             int guessCount = 0;
@@ -39,6 +42,10 @@ class Program
             // Play again?
             Console.Write("Do you want to play again? (yes/no): ");
             playAgain = Console.ReadLine();
+
+            Console.WriteLine(); // Add a blank line between rounds
         }
     }
 }
+
+
