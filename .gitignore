@@ -452,3 +452,15 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+# VS Code / IDE files
+*.workspace
+*.gym
+
+# Journal data files
+journal.txt
+
+# Optional: ignore all text logs
+*.log
+week02/Journal/journal.txt
+week02/Journal/Gym
+week02/Journal/Workplace
